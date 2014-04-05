@@ -1,0 +1,12 @@
+
+ # Module configuration
+module.tx_newstocontentrelation {
+	persistence {
+		storagePid = {$module.tx_newstocontentrelation.persistence.storagePid}
+	}
+	view {
+		templateRootPath = {$module.tx_newstocontentrelation.view.templateRootPath}
+		partialRootPath = {$module.tx_newstocontentrelation.view.partialRootPath}
+		layoutRootPath = {$module.tx_newstocontentrelation.view.layoutRootPath}
+	}
+}

@@ -1,0 +1,15 @@
+
+module.tx_newstocontentrelation {
+	view {
+		# cat=module.tx_newstocontentrelation/file; type=string; label=Path to template root (BE)
+		templateRootPath = EXT:newstocontentrelation/Resources/Private/Backend/Templates/
+		# cat=module.tx_newstocontentrelation/file; type=string; label=Path to template partials (BE)
+		partialRootPath = EXT:newstocontentrelation/Resources/Private/Backend/Partials/
+		# cat=module.tx_newstocontentrelation/file; type=string; label=Path to template layouts (BE)
+		layoutRootPath = EXT:newstocontentrelation/Resources/Private/Backend/Layouts/
+	}
+	persistence {
+		# cat=module.tx_newstocontentrelation//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}
