@@ -2,5 +2,15 @@
 <f:layout name="Default" />
 
 <f:section name="Content">
-	{test}
+	<f:form action="convert">
+		<p>
+			Current elements: <strong>{current}</strong>
+		</p>
+		<p>
+			<label>Numbers at a time</label>
+			<f:form.textfield name="next" type="number" value="{next}" />
+			<f:form.hidden name="current" value="{current}" />
+			<f:form.submit value="Convert objects"/>
+		</p>
+	</f:form>
 </f:section>
