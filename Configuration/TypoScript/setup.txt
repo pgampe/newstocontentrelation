@@ -10,3 +10,14 @@ module.tx_newstocontentrelation {
 		layoutRootPath = {$module.tx_newstocontentrelation.view.layoutRootPath}
 	}
 }
+
+# override broken news mapping
+config.tx_extbase.persistence.classes {
+	Tx_News_Domain_Model_TtContent {
+		mapping {
+			columns {
+				CType.mapOnProperty = CType
+			}
+		}
+	}
+}
