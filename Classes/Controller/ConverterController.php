@@ -108,3 +108,5 @@ class ConverterController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
 		return $GLOBALS['TYPO3_DB'];
 	}
 } 
+
+
